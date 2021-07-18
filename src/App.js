@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import './assets/css/Fonts.css'
+import {Button, FormGroup, Form, Input} from 'reactstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bgDiv">
+      <div className="mainDiv">
+        add new note!
+        <br />
+        <Button className="mainBtn">view notes</Button>
+        <br />
+        <Form>
+        <FormGroup>
+          <Input type="textarea" name="text" id="exampleText" placeholder="Plant name here" className="formInputName"/>
+        </FormGroup>
+        <FormGroup>
+          <Input type="textarea" name="text" id="exampleText" placeholder="Plant note here" className="formInputNote"/>
+        </FormGroup>
+        <Button className="submitBtn">submit</Button>
+        <Button className="cancelBtn">cancel</Button>
+        </Form>
+      </div>
     </div>
   );
 }
