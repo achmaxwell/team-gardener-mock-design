@@ -1,10 +1,11 @@
 import './App.css';
-import './assets/css/Fonts.css'
 import {Button, FormGroup, Form, Input} from 'reactstrap';
+import logo from "./assets/team-gardener-logo.png";
 
 function App() {
   return (
     <div className="bgDiv">
+      <img src={logo} alt="Team Gardeners Logo" className="logoImg"/>
       <div className="mainDiv">
         add new note!
         <br />

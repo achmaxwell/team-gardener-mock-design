@@ -6,6 +6,17 @@
   text-align: center;
 }
 
+/* logo style */
+
+.logoImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: auto;
+  margin-top: 30px
+}
+
 /* div style */
 
 .bgDiv {
@@ -22,7 +33,7 @@
   border-radius: 30px;
   padding-top: 40px;
   padding-bottom: 60px;
-  margin: 100px;
+  margin: 20px 100px 100px 100px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   color:#423138;
